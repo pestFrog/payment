@@ -1,0 +1,3 @@
+cn.shuchan.framework.mq.redis.config.ShuchanRedisMQProducerAutoConfiguration
+cn.shuchan.framework.mq.redis.config.ShuchanRedisMQConsumerAutoConfiguration
+cn.shuchan.framework.mq.rabbitmq.config.ShuchanRabbitMQAutoConfiguration

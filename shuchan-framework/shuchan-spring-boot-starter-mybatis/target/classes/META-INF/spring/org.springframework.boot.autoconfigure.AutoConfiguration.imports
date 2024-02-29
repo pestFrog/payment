@@ -1,0 +1,2 @@
+cn.shuchan.framework.datasource.config.ShuchanDataSourceAutoConfiguration
+cn.shuchan.framework.mybatis.config.ShuchanMybatisAutoConfiguration

@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "shuchan.cache",
+      "type": "cn.shuchan.framework.redis.config.ShuchanCacheProperties",
+      "sourceType": "cn.shuchan.framework.redis.config.ShuchanCacheProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shuchan.cache.redis-scan-batch-size",
+      "type": "java.lang.Integer",
+      "description": "redis scan 一次返回数量",
+      "sourceType": "cn.shuchan.framework.redis.config.ShuchanCacheProperties"
+    }
+  ],
+  "hints": []
+}

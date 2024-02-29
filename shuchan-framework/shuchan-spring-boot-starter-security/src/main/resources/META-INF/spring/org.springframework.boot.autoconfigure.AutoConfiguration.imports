@@ -1,0 +1,3 @@
+cn.shuchan.framework.security.config.ShuchanSecurityAutoConfiguration
+cn.shuchan.framework.security.config.ShuchanWebSecurityConfigurerAdapter
+cn.shuchan.framework.operatelog.config.ShuchanOperateLogV2Configuration

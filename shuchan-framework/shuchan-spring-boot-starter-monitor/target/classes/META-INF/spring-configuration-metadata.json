@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "shuchan.tracer",
+      "type": "cn.shuchan.framework.tracer.config.TracerProperties",
+      "sourceType": "cn.shuchan.framework.tracer.config.TracerProperties"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

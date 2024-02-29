@@ -1,0 +1,24 @@
+{
+  "groups": [
+    {
+      "name": "shuchan.websocket",
+      "type": "cn.shuchan.framework.websocket.config.WebSocketProperties",
+      "sourceType": "cn.shuchan.framework.websocket.config.WebSocketProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shuchan.websocket.path",
+      "type": "java.lang.String",
+      "description": "WebSocket 的连接路径",
+      "sourceType": "cn.shuchan.framework.websocket.config.WebSocketProperties"
+    },
+    {
+      "name": "shuchan.websocket.sender-type",
+      "type": "java.lang.String",
+      "description": "消息发送器的类型 可选值：local、redis、rocketmq、kafka、rabbitmq",
+      "sourceType": "cn.shuchan.framework.websocket.config.WebSocketProperties"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,7 @@
+cn.shuchan.framework.apilog.config.ShuchanApiLogAutoConfiguration
+cn.shuchan.framework.jackson.config.ShuchanJacksonAutoConfiguration
+cn.shuchan.framework.swagger.config.ShuchanSwaggerAutoConfiguration
+cn.shuchan.framework.web.config.ShuchanWebAutoConfiguration
+cn.shuchan.framework.xss.config.ShuchanXssAutoConfiguration
+cn.shuchan.framework.banner.config.ShuchanBannerAutoConfiguration
+cn.shuchan.framework.errorcode.config.ShuchanErrorCodeAutoConfiguration

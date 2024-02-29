@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for shuchan" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-configuration-processor/2.7.17/spring-boot-configuration-processor-2.7.17.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
+        </processorPath>
+        <module name="shuchan-spring-boot-starter-biz-operatelog" />
+        <module name="shuchan-spring-boot-starter-job" />
+        <module name="shuchan-spring-boot-starter-biz-tenant" />
+        <module name="shuchan-spring-boot-starter-mq" />
+        <module name="shuchan-spring-boot-starter-mybatis" />
+        <module name="shuchan-module-pay-biz" />
+        <module name="shuchan-spring-boot-starter-flowable" />
+        <module name="shuchan-module-infra-api" />
+        <module name="shuchan-module-infra-biz" />
+        <module name="shuchan-spring-boot-starter-biz-data-permission" />
+        <module name="shuchan-module-pay-api" />
+        <module name="shuchan-module-system-biz" />
+        <module name="shuchan-spring-boot-starter-protection" />
+        <module name="shuchan-spring-boot-starter-redis" />
+        <module name="shuchan-module-member-api" />
+        <module name="shuchan-spring-boot-starter-biz-dict" />
+        <module name="shuchan-spring-boot-starter-test" />
+        <module name="shuchan-module-member-biz" />
+        <module name="shuchan-spring-boot-starter-biz-pay" />
+        <module name="shuchan-spring-boot-starter-monitor" />
+        <module name="shuchan-spring-boot-starter-biz-ip" />
+        <module name="shuchan-spring-boot-starter-security" />
+        <module name="shuchan-server" />
+        <module name="shuchan-spring-boot-starter-file" />
+        <module name="shuchan-spring-boot-starter-web" />
+        <module name="shuchan-spring-boot-starter-excel" />
+        <module name="shuchan-spring-boot-starter-websocket" />
+        <module name="shuchan-common" />
+        <module name="shuchan-spring-boot-starter-captcha" />
+        <module name="shuchan-module-system-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

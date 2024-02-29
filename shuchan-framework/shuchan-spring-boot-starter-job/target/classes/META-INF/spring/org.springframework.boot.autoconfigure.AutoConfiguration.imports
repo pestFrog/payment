@@ -1,0 +1,2 @@
+cn.shuchan.framework.quartz.config.ShuchanQuartzAutoConfiguration
+cn.shuchan.framework.quartz.config.ShuchanAsyncAutoConfiguration

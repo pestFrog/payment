@@ -1,0 +1,2 @@
+cn.shuchan.framework.idempotent.config.ShuchanIdempotentConfiguration
+cn.shuchan.framework.lock4j.config.ShuchanLock4jConfiguration

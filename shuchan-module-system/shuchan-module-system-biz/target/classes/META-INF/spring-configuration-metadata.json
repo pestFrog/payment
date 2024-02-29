@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "shuchan.sms-code",
+      "type": "cn.shuchan.module.system.framework.sms.config.SmsCodeProperties",
+      "sourceType": "cn.shuchan.module.system.framework.sms.config.SmsCodeProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shuchan.sms-code.begin-code",
+      "type": "java.lang.Integer",
+      "description": "验证码最小值",
+      "sourceType": "cn.shuchan.module.system.framework.sms.config.SmsCodeProperties"
+    },
+    {
+      "name": "shuchan.sms-code.end-code",
+      "type": "java.lang.Integer",
+      "description": "验证码最大值",
+      "sourceType": "cn.shuchan.module.system.framework.sms.config.SmsCodeProperties"
+    },
+    {
+      "name": "shuchan.sms-code.expire-times",
+      "type": "java.time.Duration",
+      "description": "过期时间",
+      "sourceType": "cn.shuchan.module.system.framework.sms.config.SmsCodeProperties"
+    },
+    {
+      "name": "shuchan.sms-code.send-frequency",
+      "type": "java.time.Duration",
+      "description": "短信发送频率",
+      "sourceType": "cn.shuchan.module.system.framework.sms.config.SmsCodeProperties"
+    },
+    {
+      "name": "shuchan.sms-code.send-maximum-quantity-per-day",
+      "type": "java.lang.Integer",
+      "description": "每日发送最大数量",
+      "sourceType": "cn.shuchan.module.system.framework.sms.config.SmsCodeProperties"
+    }
+  ],
+  "hints": []
+}

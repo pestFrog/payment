@@ -1,5 +1,6 @@
 package cn.shuchan.module.pay.service.merchant;
 
+import cn.hutool.core.util.IdUtil;
 import cn.shuchan.framework.common.util.encryption.EncryptionUtil;
 import cn.shuchan.framework.common.util.string.StrUtils;
 import org.springframework.beans.factory.annotation.Value;
@@ -8,6 +9,7 @@ import javax.annotation.Resource;
 import org.springframework.validation.annotation.Validated;
 
 import java.security.KeyPair;
+import java.util.UUID;
 
 import cn.shuchan.module.pay.controller.admin.merchant.vo.*;
 import cn.shuchan.module.pay.dal.dataobject.merchant.MerchantDO;
@@ -38,6 +40,7 @@ public class MerchantServiceImpl implements MerchantService {
         // 插入
         MerchantDO merchant = BeanUtils.toBean(createReqVO, MerchantDO.class);
         merchant.setMerchantId(StrUtils.getTransNo(12));
+        //IdUtil.
         try {
             merchant = genkeys(merchant);
         }catch (Exception ignored){
@@ -101,6 +104,16 @@ public class MerchantServiceImpl implements MerchantService {
         merchantDO.setPlatformPrivateKey(EncryptionUtil.aesEncrypt(pprivateKey,osEncryKey));
         merchantDO.setPlatformPublicKey(EncryptionUtil.aesEncrypt(ppublicKey,osEncryKey));
         return merchantDO;
+    }
+
+    public static void main(String[] args) {
+        String id = IdUtil.nanoId();
+
+
+
+
+
+
     }
 
 }

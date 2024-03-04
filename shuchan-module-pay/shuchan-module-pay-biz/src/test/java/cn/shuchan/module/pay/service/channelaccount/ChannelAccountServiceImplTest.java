@@ -1,5 +1,6 @@
 package cn.shuchan.module.pay.service.channelaccount;
 
+import cn.shuchan.framework.test.core.util.RandomUtils;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -99,7 +100,7 @@ public class ChannelAccountServiceImplTest extends BaseDbUnitTest {
     @Test
     public void testDeleteChannelAccount_notExists() {
         // 准备参数
-        Integer id = randomIntegerId();
+        Integer id = RandomUtils.randomInteger();
 
         // 调用, 并断言异常
         assertServiceException(() -> channelAccountService.deleteChannelAccount(id), CHANNEL_ACCOUNT_NOT_EXISTS);
@@ -113,7 +114,7 @@ public class ChannelAccountServiceImplTest extends BaseDbUnitTest {
            o.setChannelCode(null);
            o.setChannelName(null);
            o.setMchNo(null);
-           o.setKey(null);
+           o.setEncryKey(null);
            o.setMchPrivateKey(null);
            o.setMchPublicKey(null);
            o.setChannelPublicKey(null);
@@ -128,7 +129,7 @@ public class ChannelAccountServiceImplTest extends BaseDbUnitTest {
        // 测试 mchNo 不匹配
        channelAccountMapper.insert(cloneIgnoreId(dbChannelAccount, o -> o.setMchNo(null)));
        // 测试 key 不匹配
-       channelAccountMapper.insert(cloneIgnoreId(dbChannelAccount, o -> o.setKey(null)));
+       channelAccountMapper.insert(cloneIgnoreId(dbChannelAccount, o -> o.setEncryKey(null)));
        // 测试 mchPrivateKey 不匹配
        channelAccountMapper.insert(cloneIgnoreId(dbChannelAccount, o -> o.setMchPrivateKey(null)));
        // 测试 mchPublicKey 不匹配
@@ -144,7 +145,7 @@ public class ChannelAccountServiceImplTest extends BaseDbUnitTest {
        reqVO.setChannelCode(null);
        reqVO.setChannelName(null);
        reqVO.setMchNo(null);
-       reqVO.setKey(null);
+       reqVO.setEncryKey(null);
        reqVO.setMchPrivateKey(null);
        reqVO.setMchPublicKey(null);
        reqVO.setChannelPublicKey(null);

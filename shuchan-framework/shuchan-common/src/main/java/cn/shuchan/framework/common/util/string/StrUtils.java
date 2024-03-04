@@ -1,6 +1,7 @@
 package cn.shuchan.framework.common.util.string;
 
 import cn.hutool.core.util.ArrayUtil;
+import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.StrUtil;
 
 import java.util.Arrays;

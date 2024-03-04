@@ -1,5 +1,6 @@
 package cn.shuchan.module.pay.service.merchant;
 
+import cn.shuchan.framework.test.core.util.RandomUtils;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -45,7 +46,7 @@ public class MerchantServiceImplTest extends BaseDbUnitTest {
     @Test
     public void testCreateMerchant_success() {
         // 准备参数
-        MerchantSaveReqVO createReqVO = randomPojo(MerchantSaveReqVO.class).setId(null);
+        MerchantSaveReqVO createReqVO = randomPojo(MerchantSaveReqVO.class).setMerchantId(null);
 
         // 调用
         String merchantId = merchantService.createMerchant(createReqVO);
@@ -63,13 +64,13 @@ public class MerchantServiceImplTest extends BaseDbUnitTest {
         merchantMapper.insert(dbMerchant);// @Sql: 先插入出一条存在的数据
         // 准备参数
         MerchantSaveReqVO updateReqVO = randomPojo(MerchantSaveReqVO.class, o -> {
-            o.setId(dbMerchant.getId()); // 设置更新的 ID
+            o.setMerchantId(dbMerchant.getMerchantId()); // 设置更新的 ID
         });
 
         // 调用
         merchantService.updateMerchant(updateReqVO);
         // 校验是否更新正确
-        MerchantDO merchant = merchantMapper.selectById(updateReqVO.getId()); // 获取最新的
+        MerchantDO merchant = merchantMapper.selectById(updateReqVO.getMerchantId()); // 获取最新的
         assertPojoEquals(updateReqVO, merchant);
     }
 
@@ -88,7 +89,7 @@ public class MerchantServiceImplTest extends BaseDbUnitTest {
         MerchantDO dbMerchant = randomPojo(MerchantDO.class);
         merchantMapper.insert(dbMerchant);// @Sql: 先插入出一条存在的数据
         // 准备参数
-        String id = dbMerchant.getId();
+        String id = dbMerchant.getMerchantId();
 
         // 调用
         merchantService.deleteMerchant(id);
@@ -99,7 +100,7 @@ public class MerchantServiceImplTest extends BaseDbUnitTest {
     @Test
     public void testDeleteMerchant_notExists() {
         // 准备参数
-        String id = randomStringId();
+        String id = RandomUtils.randomString();
 
         // 调用, 并断言异常
         assertServiceException(() -> merchantService.deleteMerchant(id), MERCHANT_NOT_EXISTS);

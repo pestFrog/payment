@@ -106,14 +106,4 @@ public class MerchantServiceImpl implements MerchantService {
         return merchantDO;
     }
 
-    public static void main(String[] args) {
-        String id = IdUtil.nanoId();
-
-
-
-
-
-
-    }
-
 }

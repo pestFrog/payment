@@ -5,3 +5,7 @@ DELETE FROM pay_order_extension;
 DELETE FROM pay_refund;
 DELETE FROM pay_notify_task;
 DELETE FROM pay_notify_log;
+DELETE FROM "pay_channel_info";
+DELETE FROM "pay_channel_account";
+DELETE FROM "pay_mch_recharge";
+DELETE FROM "pay_merchant";

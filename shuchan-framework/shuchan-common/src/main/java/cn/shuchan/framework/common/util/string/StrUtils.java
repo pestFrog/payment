@@ -6,6 +6,7 @@ import cn.hutool.core.util.StrUtil;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 /**
@@ -64,6 +65,17 @@ public class StrUtils {
         return Arrays.stream(content.split("\n"))
                 .filter(line -> !line.contains(sequence))
                 .collect(Collectors.joining("\n"));
+    }
+
+    /**
+     * 获取随机流水号
+     *
+     * @param length
+     * @return
+     */
+    public static String getTransNo (int length){
+        String  uuid= UUID.randomUUID().toString().replace("-","");
+        return uuid.substring(0,length);
     }
 
 }

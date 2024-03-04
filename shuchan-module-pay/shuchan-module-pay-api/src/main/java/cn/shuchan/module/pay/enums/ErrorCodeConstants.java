@@ -89,4 +89,18 @@ public interface ErrorCodeConstants {
     ErrorCode DEMO_TRANSFER_NOT_FOUND = new ErrorCode(1_007_901_001, "示例转账单不存在");
     ErrorCode DEMO_TRANSFER_FAIL_TRANSFER_ID_ERROR = new ErrorCode(1_007_901_002, "转账失败，转账单编号不匹配");
     ErrorCode DEMO_TRANSFER_FAIL_PRICE_NOT_MATCH = new ErrorCode(1_007_901_003, "转账失败，转账单金额不匹配");
+
+    // ========== 支付渠道 1-007-902-001 ==========
+    ErrorCode CHANNEL_INFO_NOT_EXISTS = new ErrorCode(1-007-902-001, "支付渠道不存在");
+    ErrorCode CHANNEL_ACCOUNT_NOT_EXISTS = new ErrorCode(1-007-902-002, "支付渠道账户不存在");
+    ErrorCode MCH_RECHARGE_NOT_EXISTS = new ErrorCode(1-007-902-003, "商户充值记录不存在");
+
+    ErrorCode MERCHANT_NOT_EXISTS = new ErrorCode(1-007-902-003, "商户不存在");
+
+    ErrorCode GEN_ENCRYPTION_KEY_ERROR = new ErrorCode(1-007-902-004, "生成商户密钥失败");
+
+    ErrorCode ADD_MERCHANT_ERROR = new ErrorCode(1-007-902-005, "新建商户失败");
+
+
+
 }
